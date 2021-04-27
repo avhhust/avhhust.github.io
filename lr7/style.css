@@ -1,0 +1,200 @@
+*{
+	font-family: Arial;
+}
+h1{
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: 400;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+.wrapper{
+	position: relative;
+	margin: 0 auto;
+	max-width: 1024px;
+	max-height: 620px;
+	height: 100%;
+	display: flex;
+}
+
+/*---------------------------------------------------*/
+.box{
+	position: relative;
+	width: 256px;
+	height: 620px;
+	border: 2px solid #d3d3d3;
+	text-align: center;
+}
+.box:nth-child(n):not(.box:nth-child(1)){
+	border-left: none;  
+}
+.circle{
+	position: absolute;
+	right: 10px;
+	top: -35px;
+	width: 70px;
+	height: 70px;
+	border: 2px solid white;
+	border-radius: 50%;
+	font-size: 12px;
+	color: white;
+	background-color: #009de1;
+
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
+.box:nth-child(1) .circle{
+	background-color: #86b022;
+}
+
+/*---------------------------------------------------*/
+
+.box__head{
+	width: 85%;
+	height: 155px;
+	margin: 0 auto;
+	border-bottom: 2px solid #d3d3d3;
+
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
+.box__head a{
+	font-size: 18px;
+	color: grey;
+}
+
+/*---------------------------------------------------*/
+
+.item{
+	position: relative;
+	width: 80%;
+	height: 410px;
+	display: inline-block;
+    text-align: center;
+    margin: 30px 0;
+}
+.item a:not(.button a){
+	font-size: 18px;
+	color: #33a1e2;
+	font-weight: 600;
+}
+
+.item p{
+	margin: 40px 0;
+}
+
+.photo{
+	height: 200px;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+/*---------------------------------------------------*/
+
+.price{
+	position: absolute;
+	bottom: 85px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 600;
+	font-size: 19px;
+}
+
+.price:after{
+	padding-left: 5px;
+	content: 'ГРН';
+	font-weight: 400;
+	font-size: 15px;
+}
+.box:nth-child(2) .price:before{
+	padding-right: 8px;
+	content: '3250 ГРН';
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: line-through;
+}
+
+/*---------------------------------------------------*/
+
+.button{
+	position: absolute;
+	left: 0; 
+  	right: 0; 
+  	margin-left: auto; 
+  	margin-right: auto; 
+	bottom: 10px;
+	width: 170px;
+	height: 50px;
+	background-color: #f0e524;
+
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
+
+.button a{
+	font-weight: 600;
+	color: black;
+}
+
+.box:nth-child(1) .button{
+	background-color: #cc3399;
+}
+
+.box:nth-child(1) .button a{
+	color: white;
+	pointer-events: none;
+   	cursor: default;
+}
+
+/*---------------------------------------------------*/
+
+.pointer{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 135px;
+	border-radius: 50%;
+	border: 2px solid #d3d3d3;
+	background-color: white;
+	cursor: pointer;
+}
+.pointer i{
+	position: absolute;
+	top: 12px;
+	border: 1px solid #d3d3d3;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+}
+
+.pointer:nth-child(odd){
+	left: -20px;
+}
+.pointer:nth-child(odd) i{
+	left: 15px;
+	transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.pointer:nth-child(even) i{
+	right: 15px;
+	transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.pointer:nth-child(even){
+	right: -20px;
+}

@@ -1,0 +1,36 @@
+div{
+	border: solid black 1px;
+}
+.fullwrap > div{
+	width: 480px;
+	margin: 10px auto;
+}
+.fullwrap{
+	width: 500px;
+	height: 700px;
+	margin: 0 auto;
+}
+.header{
+	height: 8%;
+}
+.wrap{
+	position: relative;
+	height: 70%;
+}
+.wrap > div{
+	position: absolute;
+	height: 95%;
+	top: 10px;
+
+}
+.main{
+	width: 55%;
+	left: 10px;
+}
+.sidebar{
+	width: 35%;
+	right: 10px;
+}
+.footer{
+	height: 14%;
+}

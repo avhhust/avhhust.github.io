@@ -1,0 +1,26 @@
+span::after{
+	padding: 10px 10px;
+}
+span.spades::after{
+	content: '\2660';
+}
+span.clubs::after{
+	content:  '\2663';
+}
+span.hearts::after{
+	content: '\2665';
+	color: red;
+}
+span.diamonds::after{
+	content: '\2666';
+	color: red;
+}
+
+p:nth-child(even) span{
+	font-size: 20px;
+}
+.block{
+	width: 100px;
+    display: block;
+    margin: 0 auto;
+}

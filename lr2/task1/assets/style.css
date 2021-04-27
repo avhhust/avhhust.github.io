@@ -1,0 +1,14 @@
+body{
+	font-size: 25px;
+}
+
+ol{
+	display: flex;
+	flex-direction: column-reverse;
+	list-style: none;
+	counter-reset: li;
+}
+li:before {
+	counter-increment: li;
+	content: counters(li,".") ". "; 
+}
